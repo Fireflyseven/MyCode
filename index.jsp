@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,8 +9,7 @@
 .login{
 	position:relative;
 	left:40%;
-	top:40%;
-	
+	margin-top: 10%	
 }
 .form-lable{
 	color:blue;
@@ -20,14 +21,21 @@
 	margin:10px;
 }
 .form-button{
+	font-size:20px;
 	text-align:center;
 	border:2px solid blue;
 	background:transparent;
 	color:blue;
 	width:225px;
-	margin:10px;
+	margin:20px;
 }
-
+.form-button:hover{
+	background:blue;
+	color:white;
+}
+.error{
+	color:red;
+}
 </style>
 </head>
 <body>
@@ -37,6 +45,7 @@
 		<input type="text" name="username" class="form-input"><br>
 		<div class="form-lable">密码</div>
 		<input type="text" name="password" class="form-input"><br>
+		<p class="error">用户名或密码不正确</p>
 		<input type="submit" value="登录" class="form-button">
 	</form>
 </div>
